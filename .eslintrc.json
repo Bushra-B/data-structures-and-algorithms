@@ -9,6 +9,7 @@
   },
   "env": {
     "browser": true,
+
     "es6": true,
     "jest": true,
     "jquery": true,
@@ -16,16 +17,35 @@
   },
   "rules": {
     "eol-last": "error",
+
+    "jquery": true,
+    "node": true,
+    "es6": true,
+    "jest": true
+  },
+  "rules": {
+
     "eqeqeq": [
       "error",
       "always"
     ],
+    "no-template-curly-in-string": "error",
+    "no-console": "off",
+    "no-undefined": "off",
     "indent": [
       "error",
       2
     ],
     "new-cap": "warn",
     "no-console": "off",
+
+    "quotes": [
+      "warn",
+      "single",
+      {
+        "allowTemplateLiterals": true
+      }
+    ],
     "no-multi-spaces": [
       "warn",
       {
@@ -34,6 +54,9 @@
         }
       }
     ],
+
+    "no-trailing-spaces": "warn",
+    "new-cap": "warn",
     "no-redeclare": [
       "error",
       {
@@ -51,5 +74,8 @@
       }
     ],
     "semi": "error"
+  }
+}
+    "eol-last": "error"
   }
 }
